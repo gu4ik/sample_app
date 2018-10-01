@@ -10,13 +10,19 @@ require 'rails_helper'
 #end
 
 describe "Static pages" do
+# doinstance_double('ClassName', method: nil) 
   let(:base_title) {"Ruby on Rails Tutorial Sample App"}
   
   describe "Home page" do
    
     it "should have the right title" do
       visit '/static_pages/home'
-      expect(page).to have_title("#{base_title} | Home")
+      expect(page).to have_title("#{base_title}")
+    end
+
+    it "should not have a custom page title" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title('| Home')
     end
 
     it "should have the content 'Sample App'" do

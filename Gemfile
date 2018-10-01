@@ -42,6 +42,11 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   # => gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  # => gem 'spork-rails'
+  # => gem 'guard-spork'
+  # => gem 'childprocess'
+
   # => gem 'capybara', '>= 2.15'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -62,6 +67,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'libnotify'
 end
 
 
