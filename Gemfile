@@ -6,6 +6,7 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 gem 'pg'
+gem 'bootstrap-sass'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -43,11 +44,7 @@ group :development, :test do
   # => gem 'sqlite3'
   gem 'rspec-rails'
   gem 'guard-rspec'
-  # => gem 'spork-rails'
-  # => gem 'guard-spork'
-  # => gem 'childprocess'
-
-  # => gem 'capybara', '>= 2.15'
+  
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
